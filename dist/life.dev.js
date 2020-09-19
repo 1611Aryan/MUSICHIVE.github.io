@@ -50,15 +50,15 @@ function Bubble(x, y, dx, dy, radius, color) {
   this.draw = function () {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, 2 * pi, false);
-    c.lineWidth = 0.4;
+    c.lineWidth = 0.3;
     c.fillStyle = this.color;
     c.fill();
     c.stroke();
     c.closePath();
     c.beginPath();
-    c.arc(this.x, this.y, this.radius * (1 - 1 / 15), -pi / 2, pi / 15, false);
+    c.arc(this.x, this.y, this.radius * (1 - 1 / 10), -pi / 2, pi / 20, false);
     c.rotate(0);
-    c.lineWidth = 2.5;
+    c.lineWidth = 0.5;
     c.strokeStyle = "#ffffff80";
     c.stroke();
   };
@@ -85,30 +85,30 @@ var x, y, dx, dy, radius, color;
 function init() {
   bubbles = [];
 
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 15; i++) {
     radius = Math.random() * 25 + 75;
     x = Math.random() * (canvas.width - 2 * radius) + radius;
     y = Math.random() * (canvas.height - 2 * radius) + radius;
     dx = (Math.random() - 0.5) * 6;
     dy = (Math.random() - 0.5) * 6;
 
-    if (i == 0 || i == 5) {
+    if (i == 0 || i == 5 || i == 10) {
       color = '#ffa6eb80';
     }
 
-    if (i == 1 || i == 6) {
+    if (i == 1 || i == 6 || i == 11) {
       color = '#c4c4c48f';
     }
 
-    if (i == 2 || i == 7) {
+    if (i == 2 || i == 7 || i == 12) {
       color = '#fffba880';
     }
 
-    if (i == 3 || i == 8) {
+    if (i == 3 || i == 8 || i == 13) {
       color = '#ffffff80';
     }
 
-    if (i == 4 || i == 9) {
+    if (i == 4 || i == 9 || i == 14) {
       color = '#ffe38080';
     }
 
@@ -162,3 +162,14 @@ function animate() {
 
 init();
 animate();
+gsap.to("#descriptiveText", {
+  x: 0,
+  stagger: 0.1,
+  duration: 0.75
+});
+gsap.to("#descriptiveText", {
+  y: 10,
+  stagger: 0.1,
+  duration: 0.5,
+  delay: 0.75
+});

@@ -45,7 +45,7 @@ nav a {
     color: white;
     font-size: 2rem;
     font-family: 'Rock Salt', cursive;
-    text-shadow: 1px 10px 10px #C4C4C4;
+    text-shadow: 1px 5px 10px #C4C4C4;
 }
 
 nav span {
@@ -76,7 +76,7 @@ canvas {
     position: absolute;
     width: 100%;
     height: 90vh;
-    background-color: #0000003d;
+    background-color: #7777773d;
 }
 
 main {
@@ -144,6 +144,53 @@ section img {
     background-color: #ffe380;
 }
 
+#descriptiveText {
+    background: transparent;
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(-100%, -80%);
+    animation: colorWheel 1.25s ease-in forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes colorWheel {
+
+
+    50% {
+        background: #e2e2e2;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+    }
+
+    60% {
+        text-shadow: 0 0 0 transparent;
+
+    }
+
+    65% {
+        text-shadow: 1px -20px 2px #e4e4e4;
+    }
+
+    85% {
+        text-shadow: none;
+    }
+
+    100% {
+
+        background: #ffffff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+    }
+
+
+}
+
 #circle1 {
     position: absolute;
     width: 40vw;
@@ -196,50 +243,139 @@ section img {
 #note1 {
     position: absolute;
     height: 4vh;
-    top: 50%;
-    right: 45%;
+    top: 45vh;
+    right: 33vw;
     opacity: 0.7;
+    animation: floating1 4s ease-in;
+    animation-iteration-count: infinite;
 
 }
 
 #note2 {
     position: absolute;
     height: 4.5vh;
-    top: 60%;
-    right: 50%;
+    top: 60vh;
+    right: 33vw;
     opacity: 0.8;
+    animation: floating2 24 ease-in;
+    animation-iteration-count: infinite;
 }
 
 #note3 {
     position: absolute;
     height: 3vh;
-    top: 42%;
-    right: 35%;
+    top: 26vh;
+    right: 20vw;
     opacity: 0.6;
+    animation: floating3 4s ease-in;
+    animation-iteration-count: infinite;
 }
 
 #note4 {
     position: absolute;
     height: 4vh;
-    top: 52%;
-    right: 15%;
+    top: 52vh;
+    right: 9vw;
     opacity: 0.7;
+    animation: floating4 4s ease-in;
+    animation-iteration-count: infinite;
 }
 
 #note5 {
     position: absolute;
     height: 4.5vh;
-    top: 62%;
-    right: 13%;
+    top: 62vh;
+    right: 10vw;
     opacity: 0.8;
+    animation: floating4 4s ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floating1 {
+    50% {
+        transform: translate(20%, 20%);
+        opacity: 0.4;
+    }
+}
+
+@keyframes floating2 {
+    50% {
+        transform: translate(-20%, 20%);
+        opacity: 0.4;
+    }
+}
+
+@keyframes floating3 {
+    50% {
+        transform: translate(20%, -20%);
+        opacity: 0.4;
+    }
+}
+
+@keyframes floating4 {
+    50% {
+        transform: translate(-20%, -20%);
+        opacity: 0.4;
+    }
 }
 
 @media (max-width:905px) {
     section img {
         position: absolute;
         bottom: 0;
-        right: 0%;
+        right: -1%;
         height: 55%;
+    }
+
+    #note1 {
+        position: absolute;
+        height: 4vh;
+        top: 50vh;
+        right: 50vw;
+        opacity: 0.7;
+        animation: floating1 4s ease-in;
+        animation-iteration-count: infinite;
+
+    }
+
+    #note2 {
+        position: absolute;
+        height: 4.5vh;
+        top: 60vh;
+        right: 52vw;
+        opacity: 0.8;
+        animation: floating2 24 ease-in;
+        animation-iteration-count: infinite;
+    }
+
+    #note3 {
+        position: absolute;
+        height: 3vh;
+        top: 42vh;
+        right: 35vw;
+        opacity: 0.6;
+        animation: floating3 4s ease-in;
+        animation-iteration-count: infinite;
+    }
+
+    #note4 {
+        position: absolute;
+        height: 4vh;
+        top: 52vh;
+        right: 15vw;
+        opacity: 0.7;
+        animation: floating4 4s ease-in;
+        animation-iteration-count: infinite;
+    }
+
+    #note5 {
+        position: absolute;
+        height: 4.5vh;
+        top: 62vh;
+        right: 13vw;
+        opacity: 0.8;
+        animation: floating4 4s ease-in;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -250,6 +386,58 @@ section img {
         right: 0%;
         height: 45%;
     }
+
+    #note1 {
+        position: absolute;
+        height: 4vh;
+        top: 50vh;
+        right: 45vw;
+        opacity: 0.7;
+        animation: floating1 4s ease-in;
+        animation-iteration-count: infinite;
+
+    }
+
+    #note2 {
+        position: absolute;
+        height: 4.5vh;
+        top: 60vh;
+        right: 46vw;
+        opacity: 0.8;
+        animation: floating2 24 ease-in;
+        animation-iteration-count: infinite;
+    }
+
+    #note3 {
+        position: absolute;
+        height: 3vh;
+        top: 42vh;
+        right: 35vw;
+        opacity: 0.6;
+        animation: floating3 4s ease-in;
+        animation-iteration-count: infinite;
+    }
+
+    #note4 {
+        position: absolute;
+        height: 4vh;
+        top: 52vh;
+        right: 15vw;
+        opacity: 0.7;
+        animation: floating4 4s ease-in;
+        animation-iteration-count: infinite;
+    }
+
+    #note5 {
+        position: absolute;
+        height: 4.5vh;
+        top: 62vh;
+        right: 13vw;
+        opacity: 0.8;
+        animation: floating4 4s ease-in;
+        animation-iteration-count: infinite;
+    }
+
 }
 
 @media (min-width:800px) {
