@@ -215,6 +215,7 @@ button:hover {
     width: 30vw;
     transform: translateX(-200%);
     animation: movin 3s linear infinite;
+    animation-delay: 1.25s;
     transform-origin: center;
     transform-box: fill-box;
 }
@@ -236,6 +237,7 @@ button:hover {
 #Vector_6 {
     animation: rollin 5s linear infinite;
     transform-origin: center;
+    animation-delay: 1.25s;
 }
 
 @keyframes rollin {
