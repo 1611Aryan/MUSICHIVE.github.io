@@ -1,13 +1,20 @@
-<svg width="77" height="76" viewBox="0 0 77 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1" width="76" height="76" rx="25" fill="#C4C4C4"/>
-<circle cx="39" cy="38" r="30" fill="black"/>
-<circle cx="39" cy="38" r="11" fill="#ACAF00"/>
-<circle cx="39" cy="38" r="4" fill="#66BFBF"/>
-<path d="M8 22.5C10 15.5 14 10 26 6.99998" stroke="#7B7B7B" stroke-width="0.5"/>
-<path d="M56 7C63 9 68.5 13 71.5 25" stroke="#7B7B7B" stroke-width="0.5"/>
-<path d="M72 54C70 61 66 66.5 54 69.5" stroke="#7B7B7B" stroke-width="0.5"/>
-<path d="M23.5 70C16.5 68 11 64 8 52" stroke="#7B7B7B" stroke-width="0.5"/>
-<rect x="0.921677" y="39.4754" width="34.9343" height="2" transform="rotate(-37.3964 0.921677 39.4754)" fill="#747373"/>
-<rect x="27.9027" y="18.0412" width="8.40221" height="3.1248" rx="1" transform="rotate(-23.995 27.9027 18.0412)" fill="white"/>
-<circle cx="2.57317" cy="39.6515" r="1.65149" fill="black"/>
+<svg width="406" height="419" viewBox="0 0 406 419" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="LOGO">
+<rect id="Base" x="0.637085" y="0.486816" width="404.934" height="418.115" rx="74" fill="#C4C4C4"/>
+<path id="line_tl" d="M37.9336 124.271C48.5898 85.7605 69.9021 55.5021 133.839 38.9974" stroke="#7B7B7B" stroke-width="0.5"/>
+<path id="line_tr" d="M293.681 38.9974C330.978 50.0005 360.282 72.0065 376.267 138.025" stroke="#7B7B7B" stroke-width="0.5"/>
+<path id="line_br" d="M378.931 297.569C368.275 336.079 346.962 366.338 283.025 382.842" stroke="#7B7B7B" stroke-width="0.5"/>
+<path id="line_bl" d="M120.519 385.593C83.2224 374.59 53.9179 352.584 37.9336 286.566" stroke="#7B7B7B" stroke-width="0.5"/>
+<g id="record">
+<ellipse id="Ellipse 5" cx="203.104" cy="209.545" rx="159.842" ry="165.046" fill="black"/>
+<ellipse id="Ellipse 6" cx="203.104" cy="209.545" rx="58.6089" ry="60.5167" fill="#ACAF00"/>
+<ellipse id="Background" cx="203.104" cy="209.545" rx="21.3123" ry="22.0061" fill="#66BFBF"/>
+<ellipse id="Ellipse 7" cx="203.104" cy="209.545" rx="126.951" ry="131.083" stroke="white" stroke-width="2" stroke-dasharray="15 15"/>
+</g>
+<g id="Handle">
+<rect id="Rectangle 4" width="188.39" height="10.8764" transform="matrix(0.784933 -0.619581 0.595029 0.803704 0.219482 217.661)" fill="#747373"/>
+<rect id="Rectangle 5" width="45.0119" height="17.1027" rx="1" transform="matrix(0.908623 -0.417617 0.395874 0.918305 143.976 99.7411)" fill="white"/>
+<ellipse id="Ellipse 8" cx="9.01876" cy="218.63" rx="8.79928" ry="9.08572" fill="black"/>
+</g>
+</g>
 </svg>

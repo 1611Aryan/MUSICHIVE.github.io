@@ -60,8 +60,9 @@ nav a {
     text-shadow: 1px 10px 10px #C4C4C4;
 }
 
-nav img {
+nav svg {
     height: 9.8vh;
+   
     padding: 0 1rem;
 }
 
@@ -246,7 +247,7 @@ section img {
     top: 45vh;
     right: 33vw;
     opacity: 0.7;
-    animation: floating1 4s ease-in;
+    animation: floating1 3s ease-in-out;
     animation-iteration-count: infinite;
 
 }
@@ -257,7 +258,7 @@ section img {
     top: 60vh;
     right: 33vw;
     opacity: 0.8;
-    animation: floating2 24 ease-in;
+    animation: floating2 3s ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -267,7 +268,7 @@ section img {
     top: 26vh;
     right: 20vw;
     opacity: 0.6;
-    animation: floating3 4s ease-in;
+    animation: floating3 3s ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -277,7 +278,7 @@ section img {
     top: 52vh;
     right: 9vw;
     opacity: 0.7;
-    animation: floating4 4s ease-in;
+    animation: floating4 3s ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -287,37 +288,87 @@ section img {
     top: 62vh;
     right: 10vw;
     opacity: 0.8;
-    animation: floating4 4s ease-in;
+    animation: floating4 3s ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes floating1 {
     50% {
-        transform: translate(20%, 20%);
+        transform: translate(30%, 23%);
         opacity: 0.4;
     }
 }
 
 @keyframes floating2 {
     50% {
-        transform: translate(-20%, 20%);
+        transform: translate(-30%, 30%);
         opacity: 0.4;
     }
 }
 
 @keyframes floating3 {
     50% {
-        transform: translate(20%, -20%);
+        transform: translate(30%, -30%);
         opacity: 0.4;
     }
 }
 
 @keyframes floating4 {
     50% {
-        transform: translate(-20%, -20%);
+        transform: translate(-30%, -30%);
         opacity: 0.4;
     }
 }
+
+#Handle{
+    animation : handle 4s linear infinite alternate;
+    transform-origin: left;
+}
+
+@keyframes handle{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform:rotate(-10deg);
+    }
+}
+#line_tl,#line_tr,#line_bl,#line_br{
+    animation: stroked 2s linear infinite alternate;
+}
+
+@keyframes stroked{
+    0%,100%{
+        stroke-width: 1.5;
+    }
+    50%{
+        stroke-width:3.5;
+    }
+
+}
+#Ellipse_7{
+ animation: record 4s linear infinite;
+ transform-origin: center;
+}
+
+@keyframes record{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:905px) {
     section img {
