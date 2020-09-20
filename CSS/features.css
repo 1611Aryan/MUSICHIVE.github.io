@@ -22,7 +22,7 @@ nav {
     box-shadow: 0px 3px 10px #000;
     align-items: center;
     border-radius: 0px 0px 8px 8px;
-    z-index:9999;
+    z-index: 9999;
 }
 
 nav h1 {
@@ -40,10 +40,12 @@ nav ul {
     margin-left: auto;
 
 }
-#inline{
-    display:flex;
+
+#inline {
+    display: flex;
     text-decoration: none;
 }
+
 nav h1,
 nav a {
     color: white;
@@ -57,7 +59,7 @@ nav span {
 
 }
 
- nav a {
+nav a {
     padding-right: 2.5rem;
     text-decoration: none;
     font-family: 'Ropa Sans', sans-serif;
@@ -240,7 +242,7 @@ main section {
 
     50% {
         transform: translateY(10%) rotate(-10deg);
-        
+
     }
 }
 
@@ -288,17 +290,30 @@ main section {
         filter: hue-rotate(0deg);
         stroke: transparent;
     }
-    15%{fill:#dddddd;}
-    30%{fill:#eeeeee;}
-    
+
+    15% {
+        fill: #dddddd;
+    }
+
+    30% {
+        fill: #eeeeee;
+    }
+
     50% {
         stroke: #000000;
-        fill:#ffffff;
+        fill: #ffffff;
     }
-    70%{fill:#eeeeee;}
-    85%{fill:#dddddd;}
+
+    70% {
+        fill: #eeeeee;
+    }
+
+    85% {
+        fill: #dddddd;
+    }
+
     100% {
-        
+
         stroke: transparent;
     }
 }
